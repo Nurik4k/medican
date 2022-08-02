@@ -413,7 +413,7 @@
 
    .main {
       padding: 50px 0px 80px;
-      margin-top: 120px;
+      margin-top: 110px;
    }
 
    .main::after {
@@ -544,7 +544,6 @@
       padding: 42px 30px 42px 70px;
       font-size: 20px;
       line-height: 24px;
-
    }
    
    .digital-item:nth-child(3) .digital-item__text {
@@ -822,6 +821,8 @@
 
  @media (max-width: 890px) { 
    
+
+
    .menu {
       display: none;
    }
@@ -942,8 +943,8 @@
 
 
    .main {
-      padding: 0px 0px 20px;
-      margin-top: 100px;
+      padding: 30px 0px 20px;
+      margin-top: 80px;
    }
 
    .main::after {
@@ -1078,12 +1079,11 @@
       line-height: 16px;
    }
 
-   .finance__full {
-      padding: 0 0 0 36px;
-   }
+ 
    
    .finance__total-both {
       margin-left: 5px;
+      padding-left: 5px;
    }
 
    .finance__total-year1 {   
@@ -1100,7 +1100,25 @@
    .finance__titles {
       margin-bottom: 26px;
    }
+   .finance__full .finance__full-year1 {
+      font-size: 14px;
+      line-height: 16px;
+  
+   }
+   
+   
+   .finance__full .finance__full-final {
+      
+      font-size: 18px;
+      line-height: 20px;
+   
+   }
+   
 
+   .finance__total-both.final {
+      font-size: 16px;
+      line-height: 20px;
+   }
 
    .prereqs__text {
 
@@ -1113,6 +1131,7 @@
    .prereqs {
       padding: 30px 0 50px;
    }
+
 
    .slider-item-outer{
       padding: 1.5px;
@@ -1207,7 +1226,7 @@
 
    .container-default {
       max-width: 301px;
-
+  
    }
 
    .digital-inner {
@@ -1249,7 +1268,6 @@
    .digital-item__img img {
       width: 144px;
       height: 144px;
-
    }
 
    .digital-item.item-reverse {
@@ -1374,6 +1392,7 @@
    .box__advantages-inner ul {
       margin-left: 60px;
       margin-top: 30px;
+      padding-right: 40px;
    
    }
 
@@ -1381,21 +1400,25 @@
       font-size: 15px;
       line-height: 28px;
       margin-bottom: 10px;
-    
    }
+
+   .box__advantages-inner li:last-child {
+      margin-top: 20px;
+   }
+
 
    .box__advantages-inner:after {
       display: none;
    }
-   
+
+
    .box__advantages-inner img{
       display: block;
       transform: translate(30%, 20%);
- 
+      width: auto;
       height: 200px;
       padding: 0;
    }
-
 
    .footer {
       padding: 15px 0px;
@@ -1594,7 +1617,9 @@
       padding:0px;
    }
    
-
+   .constructor-ui__link {
+      justify-content: space-around;
+   }
 
    .angle-inner i {
       font-size: 18px;
@@ -1727,6 +1752,13 @@
       color: #FFFFFF;
    }
 
+   .roadmap {
+      padding-top: 40px;
+   }
+   .roadmap::after {
+      background-position-y: 0px;
+   }
+   
    .roadmap__box {
       min-height: 1250px;
       margin-top: -150px;
@@ -2173,12 +2205,51 @@
 
 
 @media (max-width: 600px) {
+
+
+   html {
+      scroll-behavior: auto;
+   }
    .digital-item__content {
-      padding: 0 120px;
+      width: auto;
+      height: auto;
+      padding: 0px 1px;
+      margin-left: 0px;
+   }
+
+   .digital-item__img {
+      margin-left: 0px;
+   }
+
+   .digital-item.item-reverse .digital-item__content{
+      margin-left: 0px;
+      
+   }
+   
+   .digital-item.item-reverse .digital-item__img{
+      margin-left: 0px;
+   }
+
+   .digital-item__img img {
+      width: 100px;
+      height: 100px;
+   }
+
+   
+   .digital-item__text {
+      padding: 70px 20px 20px 20px;
+   }
+   
+   .digital-item:nth-child(3) .digital-item__text {
+      padding: 70px 20px 20px 20px;
+   }
+
+   .digital {
+      padding-bottom: 20px;
    }
 
    .constructor-inner {
-      padding: 0px 5px;
+      padding: 0px 30px 0px 10px;
    }
 
    .constructor-ui__left {
@@ -2194,12 +2265,49 @@
 
    .constructor-ui__img-inner img{
       text-align: center;
-      width: 270px;
+      width: 80%;
+      height: 80%;
+      
      
    }
    .constructor-ui__btns {
-      margin-bottom: 10px;
+      left:25px;
    }
 
+   .box__advantages-inner ul {
+      padding-right: 20px;
+   
+   }
 
+   .nft__text li:before{
+      vertical-align:baseline;
+   
+   }
+
+   .finance__box-inner {
+      padding: 15px 20px 10px 20px;
+  }
+}
+
+@media (max-width: 384px) {
+   .box__advantages-inner img {
+      display: none;
+   }
+
+   .box__advantages-inner ul {
+      padding-right: 5px;
+   
+   }
+
+   .main__image img {
+      max-width: 320px;
+      height: 318px;
+   }
+
+   .constructor-inner {
+      padding: 0px 5px;
+   }
+   .constructor-ui__btns {
+      left: 5px;
+   }
 }

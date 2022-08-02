@@ -14,13 +14,10 @@ font-family: 'Raleway', sans-serif;
    box-sizing: border-box;
    font-family: 'Questrial', sans-serif;
 }
-body {
-   background: radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
-}
 
 html {
    scroll-behavior: smooth;
- }
+}
 
 .container {
    max-width: 1240px;
@@ -35,21 +32,23 @@ html {
    top: 0;
    width: 100%;
    z-index: 1000;
+
 }
 
 .header-inner {
    display: flex;
    justify-content: space-between;
-   height: 100%;
+
 }
 
 .menu {
    padding-top: 16px;
 }
 
-.hamb {
+.hamb { 
    display: none;
 }
+
 .popup {
    display: none;
 }
@@ -62,7 +61,7 @@ html {
 .menu-list li {
    list-style: none;
    margin-right: 50px;
-   display: inline-block;
+   display: flex;
    position: relative;
    padding-bottom: 0.25rem;
 }
@@ -139,6 +138,7 @@ html {
 /* Main block */
 .main {
    margin-top: 145px;
+   background: radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
    position: relative;
    padding: 106px 0 129px;
 }
@@ -159,24 +159,6 @@ html {
    justify-content: space-between;
 }
 
-.title {
-   font-family: 'Cardo';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 110px;
-   line-height: 149px;
-   text-align: left;
-   letter-spacing: 0.1em;
-   text-transform: uppercase;
-
-   background: linear-gradient(180deg, #2E862A 0%, #9AC002 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   background-clip: text;
-   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-   margin-top: 17px;
-   margin-bottom: 33px;
-}
 
 .main__sign {
       font-family: 'Raleway', sans-serif;
@@ -505,6 +487,8 @@ html {
 .slider-item__icon img {
    margin-top: 21px;
    margin-bottom: 40px;
+   width: 67px;
+   height: 77px;
 }
 
 .slider-item__text {
@@ -518,26 +502,10 @@ html {
    text-align:center;
 }
 
-.slider-item-outer:nth-child(5) .slider-item__text {
+
+
+.slider-item-outer .slider-item__text {
    margin-top: -30px;
-}
-
-
-
-.slider-item-outer:nth-child(7) .slider-item__text {
-   margin-top: -70px;
-}
-
-.slider-item-outer:nth-child(8) .slider-item__text {
-   margin-top: -60px;
-}
-
-.slider-item-outer:nth-child(8) .slider-item__icon {
-   margin-top: -30px;
-}
-
-.slider-item-outer:nth-child(9) .slider-item__text {
-   margin-top: -40px;
 }
 
 
@@ -618,7 +586,10 @@ html {
 /*=======================================================================================================================================*/
 /* Digital Block */
 .digital {
-   padding: 72px 0 95px;
+   padding: 90px 0 95px;
+   background: url(../assets/images/digitalBg.svg), url(../assets/images/teamBg.svg), radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
+   background-repeat: no-repeat, no-repeat;
+   background-position: top right, bottom left ;
 }
 
 .digital__text {
@@ -629,8 +600,11 @@ html {
    letter-spacing: 0.1em;
    text-transform: uppercase;
    color: #FFFFFF;
-   margin-bottom: 89px;
+   margin-top: 30px;
+}
 
+.digital__items {
+   margin-top: 90px;
 }
 
 .digital-item {
@@ -648,7 +622,7 @@ html {
 }
 
 .digital-item__content {
-   margin-top:10%;
+   margin-top: 10%;
    min-height: 398px;
    width: 766px;
    margin-left: -50px;
@@ -702,6 +676,7 @@ NFT Collection block
 
 .nft {
    padding: 19px 0px 97px;
+   background: radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
 }
 
 .nft__sign {
@@ -726,6 +701,23 @@ NFT Collection block
    letter-spacing: 0.1em;
    color: #FFFFFF;
    margin-bottom: 90px;
+}
+
+
+
+.nft__text li{
+  
+   list-style: none;
+   position: relative;
+}
+
+.nft__text li:before{
+   content: url(../assets/icons/cannabis.png);
+   left: 0;
+   bottom: 0;
+   padding-right: 10px;
+   vertical-align: middle;
+
 }
 
 .nft__gallery {
@@ -766,6 +758,7 @@ COLLECTION DEVELOPMENT
 
 .collection {
    padding: 45px 0 90px;
+   background: radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
 }
 .collection__text-before {
    margin-top: 27px;
@@ -825,13 +818,14 @@ COLLECTION DEVELOPMENT
 
 .collection__text-after {
    font-family: 'Raleway', sans-serif;
-   font-weight: 400;
    font-size: 24px;
    line-height: 28px;
    text-align: justify;
    letter-spacing: 0.1em;
    margin-top: 91px;
    color: #FFFFFF;
+   font-style: italic;
+   font-weight: 300;
 }
 
 
@@ -841,7 +835,9 @@ PACKAGES OF FUNDRAISING
 
 .packages {
    padding: 82px 0px;
-   background: url(../assets/images/cannabiszxc.svg) no-repeat left bottom;
+   background: url(../assets/images/cannabiszxc.svg), radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
+   background-repeat: no-repeat;
+   background-position:  left bottom;
 
 }
 
@@ -856,8 +852,7 @@ PACKAGES OF FUNDRAISING
 .box__mint  {
    width: 600px;
    height: 325px;
-   background-image: url(../assets/images/mintBg.png) ;
-   background-color: linear-gradient(180deg, #A5DE12 0%, #187707 100%);
+   background-image: url(../assets/images/mintBg.webp);
    border: 6px solid #A5DE12;
    display: flex;
    justify-content: center;
@@ -873,6 +868,8 @@ PACKAGES OF FUNDRAISING
    border-radius: inherit;
    display: flex;
    flex-direction: column;
+   align-items: center;
+   justify-content: center;
    padding: 1em;
 }
 
@@ -889,14 +886,14 @@ PACKAGES OF FUNDRAISING
 
 .box__mint-total {
    font-family: 'Questrial', sans-serif;
-
    font-weight: 400;
    font-size: 32px;
    line-height: 33px;
    text-align: center;
    text-transform: uppercase;
-   
    color: #FFFFFF;
+
+   max-width: 252px
 }
 
 .box__mint-title {
@@ -966,14 +963,18 @@ PACKAGES OF FUNDRAISING
    font-weight: 500;
    font-size: 24px;
    line-height: 28px;
-   text-transform: capitalize;
+   text-transform: none;
    color: #FFFFFF;
    position: relative;
    margin-bottom: 30px;
 }
 
-
-
+.box__advantages-inner li:last-child {
+   text-transform: none;
+   font-weight: 400;
+   font-style: italic;
+   margin-top: 60px;
+}
 
 .box__advantages-inner li::before {
    content:url(../assets/icons/cannabis.png);
@@ -985,16 +986,17 @@ PACKAGES OF FUNDRAISING
 
 .box__advantages-inner:after {
    content: "";
-   height: 635px;
+   height: 600px;
    width: 4px;
    background-color: #9AC002;
    position: absolute;
    top: 60px;
-   right: 100px;
+   right: 90px;
 }
 
 .box__advantages-inner img{
-   transform: translate(8%, 36%);
+   transform: translate(8%, 38%);
+   width: 180px;
 }
 
 
@@ -1103,6 +1105,11 @@ CONSTRUCTOR
    border-radius: inherit;
    padding: 13px 17px 30px 19px;
    height: 100%;
+}
+
+.constructor-ui__img-inner img {
+   width: 381px;
+   height: 374px;
 }
 
 
@@ -1442,6 +1449,7 @@ TEAM
 
 .team__card   {
    max-width: 320px;
+   min-height: 325px;
    width: 100%;
    background: linear-gradient(135deg, #f0f249 0%, #37b66b 100%);
    border-radius: 20px;
@@ -1486,6 +1494,7 @@ TEAM
 }
 
 .card__position {
+   max-width: 223px;
    font-family: 'Raleway', sans-serif;
    font-weight: 400;
    font-size: 20px;
@@ -1581,6 +1590,7 @@ TEAM
 PARTNERS
 */
 .partners {
+   background: radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
    padding: 93px 0;
 }
 
@@ -1707,7 +1717,7 @@ RISKS
 */
 .risks {
    padding: 68px 0px 83px;
-   background-image: url(../assets/images/risksBg.svg);
+   background-image: url(../assets/images/risksBg.svg), radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
    background-repeat: no-repeat;
    background-position: top right;
 }
@@ -1827,6 +1837,7 @@ FOOTER
 =================*/
 
 .footer {
+   background: radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
    padding: 40px 0px;
 }
 
@@ -1888,7 +1899,7 @@ FOOTER
 }
 
 .menu-footer-center li a:hover {
-   color: #F0FFF0;
+   color: #90EE90;
 }
 
 .footer__copyright {
@@ -1912,7 +1923,8 @@ FOOTER
 FINANCE
 ================== */ 
 .finance {
-   padding: 57px 0px 101px;
+   background: radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
+   padding: 5px 0px 101px;
 }
 
 .finance__text {
@@ -1940,7 +1952,7 @@ FINANCE
    background: linear-gradient(180deg, #A5DE12 0%, #187707 100%);
 
    color: #FFFFFF;
-   border-radius: 40px;
+   border-radius: 20px;
    padding: 6px;
    margin-top: 55px;
 
@@ -1964,9 +1976,13 @@ FINANCE
    justify-content: space-between;
    margin-bottom: 21px;
 }
-
+/* .finance__row {
+   display: flex;
+   justify-content: space-between;
+} */
 .finance__values li {
    list-style: none;
+   
 }
 .finance__values-left {
    font-family: 'Raleway', sans-serif;
@@ -1976,15 +1992,30 @@ FINANCE
    text-align: justify;
    letter-spacing: 0.1em;
    color: #FFFFFF;
-   text-transform: uppercase;
+
+   
 }
 .finance__values-right {
    display: flex;
    justify-content: space-between;
    text-align: right;
    color: #FFFFFF;
-   text-transform: uppercase;
 }
+
+.finance__total.second::after {
+   content: "";
+   width: 100%; 
+   height:2px;
+   background-color: #ACEF1B;
+   left: 0px;
+   top: 100px;
+   margin-top: 20px;
+}
+
+
+
+
+
 .finance__values-right li {
 
    font-family: 'Montserrat', sans-serif;
@@ -2005,16 +2036,10 @@ FINANCE
    display: flex;
    text-align: right;
    justify-content: flex-end;
+   flex-wrap: wrap;
 }
 
-.finance__total div {
-   font-family: 'Montserrat', sans-serif;
-   font-weight: 400;
-   font-size: 20px;
-   line-height: 28px;
-   text-transform: uppercase;
-   color: #A5DE12;
-}
+
 
 .finance__values-year1 li{
    margin-right: 85px;
@@ -2043,19 +2068,73 @@ FINANCE
 }
 
 .finance__full {
-   padding: 70px 0 0 47px;
+  margin-top: 20px;
+}
+
+
+.finance__full .finance__values-left {
+   max-width: 688px;
 }
 
 .finance__total-both {
    margin-left: 20px;
 }
+.finance__total div {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 28px;
+   text-transform: uppercase;
+   color: #A5DE12;
+}
 
+.finance__full .finance__full-year1 {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: justify;
+   letter-spacing: 0.1em;
+   color: #FFFFFF;
+}
+
+
+
+.finance__total-both.green {
+   color:  #ACEF1B;
+}
+
+.finance__full .finance__full-final {
+
+   font-size: 40px;
+   line-height: 44px;
+   font-variant: small-caps;
+   color: #ACEF1B;
+
+}
+
+
+
+.finance__total-both.final {
+   font-size: 36px;
+   line-height: 44px;
+   color: #ACEF1B;
+}
+
+.finance__values-right li {
+   white-space: nowrap;
+}
+
+.finance__full .finance__total-both {
+   white-space: nowrap;
+}
 
 /*================
 BUISNESS ROADMAP
 ================*/
 
 .roadmap {
+   background: radial-gradient(42.49% 63.74% at 50% 50%, #2B2C30 0%, #111016 99.87%);
    padding: 146px 0 0;
    position: relative;
    width: 100%;
@@ -2238,7 +2317,7 @@ BUISNESS ROADMAP
 }
 
 .roadmap__item:nth-child(6) img {
-   width: 84px;
+   width: 70px;
 }
 
 .roadmap__item:nth-child(7) img {
